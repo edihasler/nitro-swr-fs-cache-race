@@ -1,0 +1,13 @@
+{
+  "name": "nitro-swr-fs-cache-race",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nitropack build",
+    "start": "node .output/server/index.mjs",
+    "load": "node load.mjs"
+  },
+  "dependencies": {
+    "nitropack": "2.13.4"
+  }
+}

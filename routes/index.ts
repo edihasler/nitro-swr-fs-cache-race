@@ -1,7 +1,9 @@
+import { defineCachedHandler } from 'nitro/cache'
+
 let calls = 0
 
 // Cached for 5 seconds, then served stale while one revalidation is expected to run.
-export default defineCachedEventHandler(
+export default defineCachedHandler(
   () => {
     calls++
     console.log(`${new Date().toISOString().slice(11, 23)}  handler call #${calls}`)
